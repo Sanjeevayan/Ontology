@@ -121,6 +121,7 @@
         <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Claim_Threshold"/>
         <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Deductible"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Policy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
@@ -132,6 +133,9 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Claim_Threshold">
         <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Deductible"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Policy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -159,6 +163,9 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Deductible">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Policy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -356,14 +363,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Premium -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Premium">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Credit_insurance"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Regulation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Regulation">
@@ -433,33 +432,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Conversion_&amp;_Transfer_Risk">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Risk"/>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Broker"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Buyer"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Claim"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Client"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Customer"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Insured"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Insurer"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Policy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Policy_Holder"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Premium"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/sanjeev/ontologies/2018/8/insurance#Risk"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
